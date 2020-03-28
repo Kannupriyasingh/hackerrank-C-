@@ -1,0 +1,26 @@
+
+
+// Write your Student class here
+class Student
+{ 
+    vector<int>scores;
+     public:
+    void input()
+    {
+        int val;
+        for(int i=0;i<5;i++){
+        cin>>val;
+        scores.push_back(val);
+        }
+    }
+    int  calculateTotalScore(){
+        
+     int total=0;
+    for(int i=0;i<5;i++)
+    total+=scores[i];
+     return total;
+}
+};
+
+
+
